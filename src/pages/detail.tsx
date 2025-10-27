@@ -12,12 +12,10 @@ import { getImageUrl } from '../services/MovieService';
 
 const Detail = () => {
   const { movieId } = useParams<{ movieId: string }>(); 
-  
   const [movie, setMovie] = useState<MovieDetails | null>(null);
   const [reviews, setReviews] = useState<Review[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
   const { isMovieSaved, onToggleBookmark } = useSavedMovies();
 
   useEffect(() => {
@@ -36,7 +34,7 @@ const Detail = () => {
 
       } catch (err) {
         console.error(err);
-        setError('ไม่สามารถโหลดข้อมูลหนังได้');
+        setError('Cannot load movie data');
       } finally {
         setIsLoading(false);
       }
