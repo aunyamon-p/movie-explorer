@@ -56,13 +56,7 @@ export default function HeroSection({ movies, isLoading }: HeroSectionProps) {
             className="w-full h-full object-cover"
           />
 
-          {}
           <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-linear-to-t from-black to-transparent z-10" />
-
-          {}
-          <div className="absolute bottom-16 left-30 z-20 text-white">
-            <h2 className="text-4xl font-bold">{movie.title}</h2>
-          </div>
         </div>
       ))}
 
