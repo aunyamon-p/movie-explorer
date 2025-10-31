@@ -5,7 +5,7 @@ import {
   getPopularMovies,
   getTopRatedMovies,
   searchMovies,
-} from "../api/tmdbApi";
+} from "../service/tmdbApi";
 import HeroSection from "../components/herosection";
 import MovieFilter from "../components/filter";
 import MovieList from "../components/movielist";

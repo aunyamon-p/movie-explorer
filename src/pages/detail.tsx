@@ -6,9 +6,9 @@ import {
   getMovieReviews, 
   type MovieDetails, 
   type Review 
-} from '../api/tmdbApi'; 
+} from '../service/tmdbApi'; 
 import { useSavedMovies } from '../contexts/SavedMoviesContext'; 
-import { getImageUrl } from '../services/MovieService'; 
+import { getImageUrl } from "../service/tmdbApi";
 
 const Detail = () => {
   const { movieId } = useParams<{ movieId: string }>(); 

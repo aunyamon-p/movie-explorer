@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
-import { type Movie } from '../api/tmdbApi';
+import { type Movie } from '../service/tmdbApi';
 
 interface SavedMoviesContextType {
   savedMovies: Movie[];

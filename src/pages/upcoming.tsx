@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { type Movie, getUpcomingMovies } from "../api/tmdbApi";
+import { type Movie, getUpcomingMovies } from "../service/tmdbApi";
 import { useSavedMovies } from "../contexts/SavedMoviesContext";
 import MovieList from "../components/movielist";
 import Pagination from "../components/pagination";

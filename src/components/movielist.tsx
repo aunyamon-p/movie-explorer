@@ -1,6 +1,6 @@
 import { Bookmark } from "lucide-react";
-import { type Movie } from "../api/tmdbApi"; 
-import { getImageUrl } from "../services/MovieService";
+import { type Movie } from "../service/tmdbApi"; 
+import { getImageUrl } from "../service/tmdbApi";
 import { Link } from "react-router-dom";
 
 interface MovieListProps {

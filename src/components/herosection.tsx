@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { getImageUrl } from "../services/MovieService";
-import { type Movie } from "../api/tmdbApi";
+import { getImageUrl } from "../service/tmdbApi";
+import { type Movie } from "../service/tmdbApi";
 
 interface HeroSectionProps {
   movies: Movie[];
